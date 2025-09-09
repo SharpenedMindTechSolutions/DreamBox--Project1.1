@@ -1,0 +1,83 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "sprofilevuyuiew@gmail.com",
+  "password": "123456",
+  "phone":"1234567890",
+  "name": "Test User",
+  "confirmPassword":"123456"
+}
+
+
+# POST http://localhost:5000/api/auth/login
+# Content-Type: application/json
+
+# {
+#   "email": "sprofileview@gmail.com",
+#   "password": "1234567"
+# }
+
+# POST http://localhost:5000/api/auth/forgot-password
+# Content-Type: application/json
+
+# {
+#   "email": "sprofileview@gmail.com"
+# }
+
+# POST http://localhost:5000/api/auth/reset-password/
+# Content-Type: application/json
+
+# {
+#   "email": "test@example.com",
+#   "token": "dummy-reset-token",
+#   "newPassword": "newpass123"
+# }
+
+
+
+# POST http://localhost:5000/api/roadmap/generate-roadmap
+# Content-Type: application/json
+
+# {
+#   "careerAspiration": "Full Stack Developer",
+#   "industryField": "Software Development",
+#   "userId": "68905c802d837b3bb23f9168"
+# }
+
+
+
+# ### Get a roadmap by ID
+# GET http://localhost:5000/api/roadmap/d2541d96-6a8b-4e7d-8bff-f58aaac14af5?userId=687753ca799660214b0063b8
+# Accept: application/json
+
+
+
+# ### Get all roadmaps for a user
+# GET http://localhost:5000/api/roadmap/user/68905c802d837b3bb23f9168
+# Accept: application/json
+
+# GET http://localhost:5000/api/roadmap/eee28813-3e62-401d-85b5-04a5eda232b4/download?userId=687753ca799660214b0063b8
+# Accept: application/pdf
+
+### Submit Contact Form
+# POST http://localhost:5000/api/auth/contactform
+# Content-Type: application/json
+
+# {
+#     "name": "John Doe",
+#     "email": "john.doe@example.com",
+#     "message": "I am interested in your services. Please contact me back."
+# }
+
+
+
+### Generate Roadmap
+# POST http://localhost:5000/api/roadmap/generate-roadmap
+# Content-Type: application/json
+
+# {
+#   "careerAspiration": " i want to became good physics teacher",
+#   "industryField": "government sector",
+#    "userId" :"68b0029c955e0747cb320896"
+# }
