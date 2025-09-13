@@ -9,10 +9,7 @@ dotenv.config();
 const app = express();
 connectDB();
 
-const allowedOrigins = [
-  process.env.CLIENT_lIVE_URL,
-  process.env.CLIENT_lOCAL_URL,
-];
+const allowedOrigins = process.env.CLIENT_lIVE_URL;
 
 const corsOptions = {
   origin: function (origin, callback) {
