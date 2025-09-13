@@ -3,7 +3,8 @@ import axios from "axios";
 
 const RoadmapContext = createContext();
 
-const API = import.meta.env.VITEAPIURL || "https://dream-box-project.onrender.com" ;
+const API = import.meta.env.VITE_API_URL;
+
 
 export const RoadmapProvider = ({ children }) => {
   const [nodes, setNodes] = useState([]);
@@ -24,11 +25,11 @@ const transformNodes = (nodes = []) => {
       y: node.y ?? Math.random() * 300,
     },
     style: {
-      backgroundColor: colors[index % colors.length], // 🎨 cycle colors
-      color: "#fff", // text color
+      backgroundColor: colors[index % colors.length], 
+      color: "#fff", 
       borderRadius: 8,
       padding: 10,
-      border: "2px solid white", // optional border
+      border: "2px solid white", 
     },
   }));
 };

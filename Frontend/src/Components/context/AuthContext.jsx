@@ -3,9 +3,7 @@ import axios from 'axios';
 
 const AuthContext = createContext();
 
-const API = import.meta.env.VITEAPIURL || "https://dream-box-project.onrender.com" ;
-
-
+const API = import.meta.env.VITE_API_URL ;
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -35,10 +33,6 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
     window.location.href = '/login';
   };
-
-  
-
-
 
   return (
     <AuthContext.Provider
